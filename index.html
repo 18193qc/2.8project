@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+    <a-asset-item id="rooms" src="/models/blenderRooms.gltf"></a-asset-item>
+  </a-assets>
+
+
+  <a-entity gltf-model="#rooms"></a-entity>
+
+  <a-entity camera look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera>
+  <a-entity light="type: point; intensity: 1;  color: #FFF" position="0 0 0"></a-entity>
+  
+</a-entity>
+    </a-scene>
+  </body>
+</html>
