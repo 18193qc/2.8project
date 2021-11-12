@@ -6,22 +6,50 @@
   <body>
     <a-scene>
       <a-assets>
-    <a-asset-item id="rooms" src="/models/blenderRooms1.gltf"></a-asset-item>
+        <!--Room-->
+    <a-asset-item id="rooms" src="/models/blenderRooms1.gltf"></a-asset-item> 
+    
+      <!--Logos-->
+      <img id="logo1" src="images/logos/concepts1.png">
+      <img id="logo2" src="images/logos/concepts2.png">
+      <img id="logo3" src="images/logos/concepts3.png">
+      <img id="logo4" src="images/logos/concepts4.png">
+      <img id="logo5" src="images/logos/finalLogoDesign.png">
+      <!--Patterns-->
+      <img id="patterns1" src="images/patterns/fruitPatterns.png">
+      <img id="patterns2" src="images/patterns/roundRhombus.png">
+      <img id="patterns3" src="images/patterns/solidShapePatterns.png">
+      <img id="patterns4" src="images/patterns/triangles1.png">
+      <img id="patterns5" src="images/patterns/triangles2.png">
   </a-assets>
 
-
+<!--Room file-->
   <a-entity gltf-model="#rooms"></a-entity>
 
-  <a-entity camera look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera>
+<!--Camera starting position, rotation, and controls.-->
+  <a-entity camera look-controls wasd-controls position="1 1.6 0" rotation="0 -90 0" data-aframe-default-camera>
 </a-entity>
 
-<!-- lights in all neccecary directions.-->
-<a-entity light="type: directional; color: #EEE; intensity: .8" position="-1 0 0"></a-entity>
-<a-entity light="type: directional; color: #EEE; intensity: .8" position="1 0 0"></a-entity>
+<!---->
+<a-image src="#logo1"></a-image>
+<a-image src="#logo2"></a-image>
+<a-image src="#logo3"></a-image>
+<a-image src="#logo4"></a-image>
+<a-image src="#logo5"></a-image>
+<a-image src="#patterns1"></a-image>
+<a-image src="#patterns2"></a-image>
+<a-image src="#patterns3"></a-image>
+<a-image src="#patterns4"></a-image>
+<a-image src="#patterns5"></a-image>
+
+
+<!-- Lights in all neccecary directions.-->
+<a-entity light="type: directional; color: #EEE; intensity: 1" position="-1 0 0"></a-entity>
+<a-entity light="type: directional; color: #EEE; intensity: 1" position="1 0 0"></a-entity>
 <a-entity light="type: directional; color: #EEE; intensity: 1" position="0 -1 0"></a-entity>
 <a-entity light="type: directional; color: #EEE; intensity: 1" position="0 1 0"></a-entity>
-<a-entity light="type: directional; color: #EEE; intensity: .8" position="0 0 -1"></a-entity>
-<a-entity light="type: directional; color: #EEE; intensity: .8" position="0 0 1"></a-entity>
+<a-entity light="type: directional; color: #EEE; intensity: 1" position="0 0 -1"></a-entity>
+<a-entity light="type: directional; color: #EEE; intensity: 1" position="0 0 1"></a-entity>
 
     </a-scene>
   </body>
