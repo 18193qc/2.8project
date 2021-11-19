@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <!--Room-->
+        <!--Room file-->
     <a-asset-item id="rooms" src="/models/blenderRooms1.gltf"></a-asset-item> 
     
       <!--Logos-->
@@ -23,7 +23,9 @@
       <img id="patterns5" src="images/patterns/triangles2.png">
   </a-assets>
 
-<!--Room file-->
+<a-sky color="#6EBAA7"></a-sky>
+
+<!--Room-->
   <a-entity gltf-model="#rooms"></a-entity>
 
 <!--Camera starting position, rotation, and controls.-->
